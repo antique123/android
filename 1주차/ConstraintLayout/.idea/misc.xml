@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/chair/AndroidStudioProjects/DanggnMarketRecyclerView/app/src/main/res/layout/fragment_chat.xml" value="0.1" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/DanggnMarketRecyclerView/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/DanggnMarketRecyclerView/app/src/main/res/layout/fragment_my_page.xml" value="0.1" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/DanggnMarketRecyclerView/app/src/main/res/layout/top_item.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/modules/DanggnMarketRecyclerView/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/android_enterprise/modules/DanggnMarketRecyclerView/app/src/main/res/layout/fragment_my_page.xml" value="0.2296195652173913" />
+        <entry key="..\:/android_enterprise/modules/DanggnMarketRecyclerView/app/src/main/res/layout/item.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/outer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/balloon_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_balloon"
+            android:padding="6dp"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="동네소식" />
+
+        <TextView
+            android:id="@+id/main_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/balloon_text_view"
+            app:layout_constraintBottom_toTopOf="@id/id_text_view"
+            tools:text="영어회화 공부하고싶은데 혹시 영어잘하시는데 일본어 공부하고싶으신분 있나요? 서로 회화봐주는 식으로 스터디하고싶은데 저는 일본에서 대학생활 3년정도해서 프리토킹 어느정도 가능합니다! 영어회화 가능하신 분이랑 재능교환 하고싶습니다!" />
+
+        <TextView
+            android:id="@+id/id_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="당근마켓 · 흑석동"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_text_view" />
+
+        <TextView
+            android:id="@+id/write_time_text_view"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_text_view"
+            tools:text="28분전" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <View
+        android:id="@+id/middle_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/divide_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/outer_layout" />
+
+    <TextView
+        android:id="@+id/like_button_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="6dp"
+        android:drawableStart="@drawable/ic_smile"
+        android:drawablePadding="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="좋아요"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/middle_divider" />
+
+    <TextView
+        android:id="@+id/write_button_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawableStart="@drawable/ic_write"
+        android:drawablePadding="4dp"
+        android:foreground="?attr/selectableItemBackground"
+        android:padding="10dp"
+        android:text="댓글쓰기"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/like_button_text_view"
+        app:layout_constraintStart_toEndOf="@id/like_button_text_view"
+        app:layout_constraintTop_toTopOf="@id/like_button_text_view" />
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/divide_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/like_button_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
