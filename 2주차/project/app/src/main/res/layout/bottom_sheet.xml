@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    app:behavior_peekHeight="420dp"
+    app:behavior_hideable="false"
+    android:minHeight="300dp"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/delivery_status_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="60dp">
+
+            <ImageView
+                android:id="@+id/delivery_man_name_profile_image_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/delivery_man_name_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="엔틱"
+                android:textColor="@color/gray"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/delivery_man_name_profile_image_view"
+                app:layout_constraintTop_toTopOf="@id/delivery_man_name_profile_image_view" />
+
+            <TextView
+                android:id="@+id/delivery_vehicle_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="오토바이로 이동중"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/delivery_man_name_profile_image_view"
+                app:layout_constraintStart_toStartOf="@id/delivery_man_name_text_view" />
+
+            <Button
+                android:id="@+id/call_button"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="40dp"
+                android:background="@color/white"
+                android:backgroundTint="@null"
+                android:text="전화하기"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/delivery_man_name_profile_image_view" />
+
+            <View
+                android:id="@+id/upper_divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="40dp"
+                android:background="@color/light_gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/delivery_vehicle_text_view" />
+
+            <TextView
+                android:id="@+id/time_remaining_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/upper_divider"
+                app:layout_constraintTop_toBottomOf="@id/upper_divider" />
+
+            <TextView
+                android:id="@+id/unit_of_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="분"
+                android:textColor="@color/gray"
+                android:layout_marginTop="27dp"
+                app:layout_constraintTop_toTopOf="@id/time_remaining_text_view"
+                app:layout_constraintStart_toEndOf="@id/time_remaining_text_view" />
+
+            <TextView
+                android:id="@+id/estimated_time_of_arrival_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="20:20 PM 도착 예정"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/time_remaining_text_view"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/delivery_status_image_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/status"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/time_remaining_text_view" />
+
+            <TextView
+                android:id="@+id/order_accepted_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="주문 수락됨"
+                app:layout_constraintStart_toEndOf="@id/delivery_status_image_view"
+                app:layout_constraintTop_toTopOf="@id/delivery_status_image_view"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/menu_being_prepared_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="메뉴 준비중"
+                app:layout_constraintStart_toStartOf="@id/order_accepted_text_view"
+                app:layout_constraintTop_toBottomOf="@id/order_accepted_text_view"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/in_delivery_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="@id/menu_being_prepared_text_view"
+                app:layout_constraintTop_toBottomOf="@id/menu_being_prepared_text_view"
+                android:textColor="@color/black"
+                android:text="배달중"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/delivery_complete_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toStartOf="@id/in_delivery_text_view"
+                app:layout_constraintTop_toBottomOf="@id/in_delivery_text_view"
+                android:textColor="@color/black"
+                android:text="배달 완료"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reception_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="20:01 PM"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/order_accepted_text_view" />
+
+            <TextView
+                android:id="@+id/menu_being_prepared_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="20:01 PM"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/menu_being_prepared_text_view" />
+            <TextView
+                android:id="@+id/in_delivery_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:text="20:14 PM"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/in_delivery_text_view" />
+            <TextView
+                android:id="@+id/delivery_complete_time_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:textColor="@color/gray"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/delivery_complete_text_view" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/help_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/delivery_status_image_view"
+                app:layout_constraintStart_toStartOf="@+id/delivery_status_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/in_delivery_time_text_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="6dp"
+                android:text="도움이 필요하신가요?"
+
+                android:background="@drawable/shape_stroke_round_button" />
+
+
+            <View
+                android:id="@+id/middle_divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                app:layout_constraintTop_toBottomOf="@+id/help_button"
+                app:layout_constraintStart_toStartOf="@+id/delivery_status_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/in_delivery_time_text_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="6dp" />
+
+            <TextView
+                android:id="@+id/address_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="배달 주소"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/middle_divider"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="@id/middle_divider" />
+
+            <TextView
+                android:id="@+id/address_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서울특별시 영등포구 문래동6가 57 106동"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/address_title_text_view"
+                app:layout_constraintStart_toStartOf="@id/address_title_text_view"
+                android:layout_marginTop="6dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/information_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/address_text_view"
+                app:layout_constraintStart_toStartOf="@+id/delivery_status_image_view"
+                app:layout_constraintEnd_toEndOf="@+id/in_delivery_time_text_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="@color/blue"
+                android:text="길안내 작성하기\n배달파트너가 길을 찾기 더 쉬워요"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:drawableEnd="@drawable/ic_right_arrow"
+                android:background="@drawable/shape_stroke_round_button" />
+
+            <TextView
+                android:id="@+id/additional_explanation_text_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/information_button"
+                app:layout_constraintStart_toStartOf="@+id/information_button"
+                android:textColor="@color/light_gray"
+                android:textSize="12sp"
+                android:text="배달파트너가 주소지로 출발하기 전까지 작성 가능합니다"
+                android:layout_marginTop="4dp" />
+
+            <View
+                android:id="@+id/bottom_divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toStartOf="@+id/information_button"
+                app:layout_constraintEnd_toEndOf="@+id/information_button"
+                app:layout_constraintTop_toBottomOf="@id/additional_explanation_text_view"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/light_gray" />
+
+            <TextView
+                android:id="@+id/menu_title_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="27PM00 주문"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@id/bottom_divider"
+                app:layout_constraintStart_toStartOf="@+id/bottom_divider" />
+
+            <TextView
+                android:id="@+id/menu_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노브랜드버거 마곡점"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/menu_title_text_view"
+                app:layout_constraintStart_toStartOf="@id/menu_title_text_view"
+                android:layout_marginTop="6dp" />
+
+            <TextView
+                android:id="@+id/menu_number_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12sp"
+                android:textColor="@color/gray"
+                android:background="@drawable/shape_non_stroke_round_text_view"
+                app:layout_constraintTop_toBottomOf="@id/menu_text_view"
+                app:layout_constraintStart_toStartOf="@id/menu_text_view"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"/>
+
+            <TextView
+                android:id="@+id/menu_detail_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NBB어메이징, 감자튀김(M),\n브랜드 캔콜라(355ml)"
+                app:layout_constraintTop_toTopOf="@+id/menu_number_text_view"
+                app:layout_constraintStart_toEndOf="@+id/menu_number_text_view"
+                android:layout_marginStart="10dp"/>
+
+
+            <TextView
+                android:id="@+id/price_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/menu_detail_text_view"
+                app:layout_constraintStart_toStartOf="@+id/menu_detail_text_view"
+                android:text="합계: 12,000"
+                android:layout_marginTop="20dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/unit_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/price_text_view"
+                app:layout_constraintBottom_toBottomOf="@id/price_text_view"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:text="원"
+                android:layout_marginBottom="4dp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
