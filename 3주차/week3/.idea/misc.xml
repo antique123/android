@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/drawable/bottom_navigation_view_icon_tint.xml" value="0.2195" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/drawable/category_button_shape.xml" value="0.2015" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/drawable/shape_round_button.xml" value="0.21" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/activity_add_post.xml" value="0.2" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/activity_gallery.xml" value="0.16" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/activity_main.xml" value="0.24048913043478262" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/category_item.xml" value="0.1" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/fragment_life.xml" value="0.4" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/goods_item.xml" value="0.4" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/layout/post_item.xml" value="0.16893115942028986" />
+        <entry key="..\:/Users/chair/AndroidStudioProjects/week3/app/src/main/res/xml/file_paths.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable-anydpi-v24/ic_trash_can.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/bottom_navigation_view_icon_tint.xml" value="0.188" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/ic_trash_can.xml" value="0.124" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/shape_round_button.xml" value="0.367" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/shape_round_container.xml" value="0.196" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/shape_round_gray_button.xml" value="0.196" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/drawable/shape_round_orange_button.xml" value="0.196" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/activity_add_goods.xml" value="0.5" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/activity_gallery.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/filter_item.xml" value="0.27355072463768115" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/fragment_chatting.xml" value="0.33" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/fragment_home.xml" value="0.5" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/fragment_life.xml" value="0.18" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/fragment_my_danggn.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/fragment_near_me.xml" value="0.1" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/gallery_item.xml" value="0.18958333333333333" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/goods_item.xml" value="0.33" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/item_chat.xml" value="0.5" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/layout/post_item.xml" value="0.18125" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/menu/bottom_navigation_view_menu.xml" value="0.1796875" />
+        <entry key="..\:/android_enterprise/study/sesac/week3/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.124" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">week3</string>
+    <string name="home_menu_title_text">홈</string>
+    <string name="neighborhood_life_title_text">동네생활</string>
+    <string name="near_me_menu_title_text">내 근처</string>
+    <string name="chatting_menu_title_text">채팅</string>
+    <string name="my_danggn_menu_title_text">나의 당근</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="gallery_activity_title_text">갤러리</string>
+    <string name="complete_button_text">완료</string>
+    <string name="shared_preferences_file_key">com.sesac.week3.PREFERENCE_FILE_KEY</string>
+</resources>

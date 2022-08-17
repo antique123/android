@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home_menu"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="@string/home_menu_title_text" />
+
+    <item android:id="@+id/neighborhood_life_menu"
+        android:icon="@drawable/ic_baseline_library_books_24"
+        android:title="@string/neighborhood_life_title_text" />
+
+    <item android:id="@+id/near_me_menu"
+        android:icon="@drawable/ic_baseline_location_on_24"
+        android:title="@string/near_me_menu_title_text" />
+
+    <item android:id="@+id/chatting_menu"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/chatting_menu_title_text" />
+
+    <item android:id="@+id/my_danggn_menu"
+        android:icon="@drawable/ic_baseline_perm_identity_24"
+        android:title="@string/my_danggn_menu_title_text" />
+</menu>

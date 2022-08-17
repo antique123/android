@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageButton
+        android:id="@+id/goods_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/shape_round_button"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/goods_explain_view"
+        tools:background="@color/light_gary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/goods_explain_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:fontFamily="@font/gothic_r"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:maxLines="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/goods_image_view"
+        app:layout_constraintTop_toTopOf="@id/goods_image_view"
+        app:layout_constraintBottom_toTopOf="@id/location_text_view"
+        tools:text="(새상품)트라이엄프 브라팬티세트2세트 일괄 판매" />
+
+    <TextView
+        android:id="@+id/location_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/goods_explain_view"
+        app:layout_constraintStart_toStartOf="@id/goods_explain_view"
+        app:layout_constraintBottom_toTopOf="@id/price_text_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/dark_gray"
+        android:fontFamily="@font/gothic_r"
+        android:textSize="12sp"
+
+        tools:text="등촌제1동"/>
+
+    <TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/location_text_view"
+        app:layout_constraintStart_toStartOf="@id/goods_explain_view"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/gothic_b"
+        tools:text="15,000" />
+
+    <TextView
+        android:id="@+id/unit_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="원"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:fontFamily="@font/gothic_b"
+        app:layout_constraintStart_toEndOf="@id/price_text_view"
+        app:layout_constraintTop_toTopOf="@id/price_text_view"
+        app:layout_constraintBottom_toBottomOf="@id/price_text_view"/>
+
+    <View
+        android:id="@+id/bottom_divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@id/goods_image_view"
+        app:layout_constraintStart_toStartOf="@id/goods_image_view"
+        android:background="@color/light_gary"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/like_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@null"
+        android:drawableStart="@drawable/ic_like"
+        android:text="2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/reply_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        app:layout_constraintEnd_toStartOf="@id/like_button"
+        app:layout_constraintBottom_toBottomOf="@id/like_button"
+        app:layout_constraintTop_toTopOf="@id/like_button"
+        android:background="@null"
+        android:layout_marginEnd="4dp"
+        android:drawableStart="@drawable/ic_reply"
+        android:text="2"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
